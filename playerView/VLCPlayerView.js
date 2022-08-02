@@ -194,11 +194,7 @@ export default class VLCPlayerView extends Component {
             {showBack && (
               <TouchableOpacity
                 onPress={() => {
-                  if (isFull) {
-                    closeFullScreen && closeFullScreen();
-                  } else {
                     onLeftPress && onLeftPress();
-                  }
                 }}
                 style={styles.btn}
                 activeOpacity={0.8}>
